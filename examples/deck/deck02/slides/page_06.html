@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Frontend Components</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<style type="text/tailwindcss">
+@layer utilities {
+.ppt-slide {
+@apply relative w-[1280px] min-h-[720px] mx-auto box-border
+}
+}
+</style>
+<style>body {
+    font-family: "IBM Plex Sans", sans-serif;
+    background: #f8fafc
+    }
+.tech-title {
+    font-family: "Inter", sans-serif
+    }
+.grid-item {
+    transition: all 0.3s ease
+    }
+.grid-item:hover {
+    transform: translatey(-2px)
+    }</style>
+<style>.material-icons {
+    width: 1em
+    }</style><style>.material-icons {
+    direction: rtl
+    }</style></head>
+<body>
+<div class="ppt-slide bg-white h-[720px] flex flex-col">
+<div class="px-16 py-8 flex-grow flex flex-col justify-center">
+<h2 class="tech-title font-bold text-slate-800 mb-6" style="font-size: 40px;
+letter-spacing: -1px">
+Frontend <span class="text-cyan-500">Components</span>
+</h2>
+
+<div class="grid grid-cols-4 gap-4">
+<div class="grid-item bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-5 border border-blue-100">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-12 h-12 bg-blue-900 rounded-xl flex items-center justify-center flex-shrink-0">
+<i class="material-icons text-white" style="font-size: 26px">dashboard</i>
+</div>
+<h3 class="text-slate-800 font-bold text-lg">Dashboard</h3>
+</div>
+<p class="text-slate-600 text-sm leading-relaxed">Infrastructure overview & monitoring</p>
+</div>
+
+<div class="grid-item bg-gradient-to-br from-cyan-50 to-teal-50 rounded-xl p-5 border border-cyan-100">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-12 h-12 bg-blue-900 rounded-xl flex items-center justify-center flex-shrink-0">
+<i class="material-icons text-white" style="font-size: 26px">psychology</i>
+</div>
+<h3 class="text-slate-800 font-bold text-lg">Analytics</h3>
+</div>
+<p class="text-slate-600 text-sm leading-relaxed">AI-powered alert intelligence</p>
+</div>
+
+<div class="grid-item bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-5 border border-indigo-100">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-12 h-12 bg-blue-900 rounded-xl flex items-center justify-center flex-shrink-0">
+<i class="material-icons text-white" style="font-size: 26px">hub</i>
+</div>
+<h3 class="text-slate-800 font-bold text-lg">Correlation</h3>
+</div>
+<p class="text-slate-600 text-sm leading-relaxed">Event correlation & root cause</p>
+</div>
+
+<div class="grid-item bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-5 border border-purple-100">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-12 h-12 bg-blue-900 rounded-xl flex items-center justify-center flex-shrink-0">
+<i class="material-icons text-white" style="font-size: 26px">notifications</i>
+</div>
+<h3 class="text-slate-800 font-bold text-lg">Alerts</h3>
+</div>
+<p class="text-slate-600 text-sm leading-relaxed">Comprehensive alert management</p>
+</div>
+
+<div class="grid-item bg-gradient-to-br from-cyan-50 to-blue-50 rounded-xl p-5 border border-cyan-100">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-12 h-12 bg-blue-900 rounded-xl flex items-center justify-center flex-shrink-0">
+<i class="material-icons text-white" style="font-size: 26px">show_chart</i>
+</div>
+<h3 class="text-slate-800 font-bold text-lg">Metrics</h3>
+</div>
+<p class="text-slate-600 text-sm leading-relaxed">Performance monitoring & KPIs</p>
+</div>
+
+<div class="grid-item bg-gradient-to-br from-indigo-50 to-cyan-50 rounded-xl p-5 border border-indigo-100">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-12 h-12 bg-blue-900 rounded-xl flex items-center justify-center flex-shrink-0">
+<i class="material-icons text-white" style="font-size: 26px">account_tree</i>
+</div>
+<h3 class="text-slate-800 font-bold text-lg">Topology</h3>
+</div>
+<p class="text-slate-600 text-sm leading-relaxed">Network topology visualization</p>
+</div>
+
+<div class="grid-item bg-gradient-to-br from-teal-50 to-emerald-50 rounded-xl p-5 border border-teal-100">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-12 h-12 bg-blue-900 rounded-xl flex items-center justify-center flex-shrink-0">
+<i class="material-icons text-white" style="font-size: 26px">security</i>
+</div>
+<h3 class="text-slate-800 font-bold text-lg">Security</h3>
+</div>
+<p class="text-slate-600 text-sm leading-relaxed">Security monitoring & threat detection</p>
+</div>
+
+<div class="grid-item bg-gradient-to-br from-emerald-50 to-green-50 rounded-xl p-5 border border-emerald-100">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-12 h-12 bg-blue-900 rounded-xl flex items-center justify-center flex-shrink-0">
+<i class="material-icons text-white" style="font-size: 26px">trending_down</i>
+</div>
+<h3 class="text-slate-800 font-bold text-lg">Anomaly Detection</h3>
+</div>
+<p class="text-slate-600 text-sm leading-relaxed">AI-powered anomaly detection</p>
+</div>
+
+<div class="grid-item bg-gradient-to-br from-pink-50 to-rose-50 rounded-xl p-5 border border-pink-100">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-12 h-12 bg-blue-900 rounded-xl flex items-center justify-center flex-shrink-0">
+<i class="material-icons text-white" style="font-size: 26px">find_in_page</i>
+</div>
+<h3 class="text-slate-800 font-bold text-lg">Probe</h3>
+</div>
+<p class="text-slate-600 text-sm leading-relaxed">Network probing & diagnostics</p>
+</div>
+
+<div class="grid-item bg-gradient-to-br from-violet-50 to-purple-50 rounded-xl p-5 border border-violet-100">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-12 h-12 bg-blue-900 rounded-xl flex items-center justify-center flex-shrink-0">
+<i class="material-icons text-white" style="font-size: 26px">health_and_safety</i>
+</div>
+<h3 class="text-slate-800 font-bold text-lg">Healthcheck</h3>
+</div>
+<p class="text-slate-600 text-sm leading-relaxed">System health monitoring</p>
+</div>
+
+<div class="grid-item bg-gradient-to-br from-rose-50 to-red-50 rounded-xl p-5 border border-rose-100">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-12 h-12 bg-blue-900 rounded-xl flex items-center justify-center flex-shrink-0">
+<i class="material-icons text-white" style="font-size: 26px">account_tree</i>
+</div>
+<h3 class="text-slate-800 font-bold text-lg">Workflow</h3>
+</div>
+<p class="text-slate-600 text-sm leading-relaxed">Workflow management & automation</p>
+</div>
+
+<div class="grid-item bg-gradient-to-br from-orange-50 to-amber-50 rounded-xl p-5 border border-orange-100">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-12 h-12 bg-blue-900 rounded-xl flex items-center justify-center flex-shrink-0">
+<i class="material-icons text-white" style="font-size: 26px">speed</i>
+</div>
+<h3 class="text-slate-800 font-bold text-lg">Prometheus</h3>
+</div>
+<p class="text-slate-600 text-sm leading-relaxed">Prometheus metrics integration</p>
+</div>
+
+<div class="grid-item bg-gradient-to-br from-amber-50 to-yellow-50 rounded-xl p-5 border border-amber-100">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-12 h-12 bg-blue-900 rounded-xl flex items-center justify-center flex-shrink-0">
+<i class="material-icons text-white" style="font-size: 26px">history</i>
+</div>
+<h3 class="text-slate-800 font-bold text-lg">Alert History</h3>
+</div>
+<p class="text-slate-600 text-sm leading-relaxed">Historical alert analysis</p>
+</div>
+
+<div class="grid-item bg-gradient-to-br from-lime-50 to-green-50 rounded-xl p-5 border border-lime-100">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-12 h-12 bg-blue-900 rounded-xl flex items-center justify-center flex-shrink-0">
+<i class="material-icons text-white" style="font-size: 26px">router</i>
+</div>
+<h3 class="text-slate-800 font-bold text-lg">SNMP</h3>
+</div>
+<p class="text-slate-600 text-sm leading-relaxed">SNMP device management</p>
+</div>
+
+<div class="grid-item bg-gradient-to-br from-fuchsia-50 to-purple-50 rounded-xl p-5 border border-fuchsia-100">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-12 h-12 bg-blue-900 rounded-xl flex items-center justify-center flex-shrink-0">
+<i class="material-icons text-white" style="font-size: 26px">settings_applications</i>
+</div>
+<h3 class="text-slate-800 font-bold text-lg">SNMP Simulation</h3>
+</div>
+<p class="text-slate-600 text-sm leading-relaxed">SNMP testing & simulation</p>
+</div>
+
+<div class="grid-item bg-gradient-to-br from-sky-50 to-cyan-50 rounded-xl p-5 border border-sky-100">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-12 h-12 bg-blue-900 rounded-xl flex items-center justify-center flex-shrink-0">
+<i class="material-icons text-white" style="font-size: 26px">cloud_upload</i>
+</div>
+<h3 class="text-slate-800 font-bold text-lg">Simulation</h3>
+</div>
+<p class="text-slate-600 text-sm leading-relaxed">Network simulation environment</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>API Architecture</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<style type="text/tailwindcss">
+@layer utilities {
+.ppt-slide {
+@apply relative w-[1280px] min-h-[720px] mx-auto box-border
+}
+}
+</style>
+<style>body {
+    font-family: "IBM Plex Sans", sans-serif;
+    background: #f8fafc
+    }
+.tech-title {
+    font-family: "Inter", sans-serif
+    }</style>
+<style>.material-icons {
+    width: 1em
+    }</style><style>.material-icons {
+    direction: rtl
+    }</style></head>
+<body>
+<div class="ppt-slide bg-white h-[720px] flex flex-col">
+<div class="px-16 py-8 flex-grow flex flex-col justify-center">
+<h2 class="tech-title font-bold text-slate-800 mb-8" style="font-size: 40px;
+letter-spacing: -1px">
+API <span class="text-cyan-500">Architecture</span>
+</h2>
+
+<div class="grid grid-cols-3 gap-6">
+<div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-100 flex flex-col h-[480px]">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-14 h-14 bg-blue-900 rounded-xl flex items-center justify-center flex-shrink-0">
+<i class="material-icons text-white" style="font-size: 32px">router</i>
+</div>
+<div>
+<h3 class="text-slate-800 font-bold text-2xl">SNMP Management</h3>
+<p class="text-slate-600 font-medium text-base">Device & Trap API Endpoints</p>
+</div>
+</div>
+
+<div class="flex-grow space-y-3">
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 bg-blue-900 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+<span class="text-white font-bold text-sm">GET</span>
+</div>
+<div class="flex-1">
+<p class="text-slate-800 font-semibold text-sm mb-1">/api/snmp/devices</p>
+<p class="text-slate-600 text-base">List all SNMP devices</p>
+</div>
+</div>
+
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 bg-blue-900 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+<span class="text-white font-bold text-sm">POST</span>
+</div>
+<div class="flex-1">
+<p class="text-slate-800 font-semibold text-sm mb-1">/api/snmp/devices</p>
+<p class="text-slate-600 text-base">Register new device</p>
+</div>
+</div>
+
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 bg-blue-900 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+<span class="text-white font-bold text-sm">GET</span>
+</div>
+<div class="flex-1">
+<p class="text-slate-800 font-semibold text-sm mb-1">/api/snmp/traps</p>
+<p class="text-slate-600 text-base">Retrieve trap history</p>
+</div>
+</div>
+
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 bg-blue-900 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+<span class="text-white font-bold text-sm">GET</span>
+</div>
+<div class="flex-1">
+<p class="text-slate-800 font-semibold text-sm mb-1">/api/snmp/mibs</p>
+<p class="text-slate-600 text-base">List available MIBs</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="bg-gradient-to-br from-cyan-50 to-teal-50 rounded-xl p-6 border border-cyan-100 flex flex-col h-[480px]">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-14 h-14 bg-cyan-700 rounded-xl flex items-center justify-center flex-shrink-0">
+<i class="material-icons text-white" style="font-size: 32px">insights</i>
+</div>
+<div>
+<h3 class="text-slate-800 font-bold text-2xl">Metrics & Monitoring</h3>
+<p class="text-slate-600 font-medium text-base">Performance API Endpoints</p>
+</div>
+</div>
+
+<div class="flex-grow space-y-3">
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 bg-cyan-700 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+<span class="text-white font-bold text-sm">GET</span>
+</div>
+<div class="flex-1">
+<p class="text-slate-800 font-semibold text-sm mb-1">/api/prometheus/query</p>
+<p class="text-slate-600 text-base">Execute PromQL queries</p>
+</div>
+</div>
+
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 bg-cyan-700 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+<span class="text-white font-bold text-sm">GET</span>
+</div>
+<div class="flex-1">
+<p class="text-slate-800 font-semibold text-sm mb-1">/api/metrics/system</p>
+<p class="text-slate-600 text-base">System performance metrics</p>
+</div>
+</div>
+
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 bg-cyan-700 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+<span class="text-white font-bold text-sm">GET</span>
+</div>
+<div class="flex-1">
+<p class="text-slate-800 font-semibold text-sm mb-1">/api/health</p>
+<p class="text-slate-600 text-base">Service health status</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-6 border border-indigo-100 flex flex-col h-[480px]">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-14 h-14 bg-indigo-700 rounded-xl flex items-center justify-center flex-shrink-0">
+<i class="material-icons text-white" style="font-size: 32px">notifications_active</i>
+</div>
+<div>
+<h3 class="text-slate-800 font-bold text-2xl">Alert Management</h3>
+<p class="text-slate-600 font-medium text-base">Alert API Endpoints</p>
+</div>
+</div>
+
+<div class="flex-grow space-y-3">
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 bg-indigo-700 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+<span class="text-white font-bold text-sm">GET</span>
+</div>
+<div class="flex-1">
+<p class="text-slate-800 font-semibold text-sm mb-1">/api/alerts</p>
+<p class="text-slate-600 text-base">Retrieve active alerts</p>
+</div>
+</div>
+
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 bg-indigo-700 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+<span class="text-white font-bold text-sm">POST</span>
+</div>
+<div class="flex-1">
+<p class="text-slate-800 font-semibold text-sm mb-1">/api/alerts/:id/acknowledge</p>
+<p class="text-slate-600 text-base">Acknowledge alert</p>
+</div>
+</div>
+
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 bg-indigo-700 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+<span class="text-white font-bold text-sm">GET</span>
+</div>
+<div class="flex-1">
+<p class="text-slate-800 font-semibold text-sm mb-1">/api/alerts/history</p>
+<p class="text-slate-600 text-base">Alert history logs</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

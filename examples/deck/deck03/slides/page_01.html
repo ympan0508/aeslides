@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>AI Prompt Lab - Pitch Deck</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .ppt-slide {
+                @apply relative w-[1280px] h-[720px] mx-auto box-border overflow-hidden
+            }
+        }
+    </style>
+    <style>body {
+    font-family: "Inter", sans-serif;
+    background: #f0f0f0
+    }
+.primary-gradient {
+    background: linear-gradient(135deg, #1e3a8a 0%, #7c3aed 100%);
+    background: linear-gradient(135deg, #0f172a 0%, #4f46e5 50%, #9333ea 100%)
+    }
+.text-glow {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.3)
+    }</style>
+<style>.material-icons {
+    width: 1em
+    }</style><style>.material-icons {
+    direction: rtl
+    }</style></head>
+<body>
+    <div class="ppt-slide primary-gradient h-[720px] flex flex-col justify-center items-center relative">
+        <!-- Abstract Background Elements -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-20">
+            <div class="absolute top-[-50px] right-[-50px] w-96 h-96 bg-purple-500 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-[-50px] left-[-50px] w-80 h-80 bg-blue-500 rounded-full blur-3xl"></div>
+            <div class="absolute top-1/2 left-1/4 w-64 h-64 bg-indigo-400 rounded-full blur-3xl"></div>
+        </div>
+        
+        <!-- Content Container -->
+        <div class="relative z-10 text-center px-20 flex flex-col items-center justify-center max-w-5xl">
+            <!-- Badge -->
+            <div class="flex items-center gap-2 mb-6 bg-white/10 backdrop-blur-sm px-5 py-2 rounded-full border border-white/20">
+                <i class="material-icons text-white text-xl">extension</i>
+                <span class="text-white/90 text-sm font-semibold tracking-wider uppercase">Browser Extension</span>
+            </div>
+            
+            <!-- Main Title -->
+            <h1 class="text-[68px] font-extrabold text-white leading-tight mb-6 tracking-tight text-glow">
+                AI Prompt Lab
+            </h1>
+            
+            <!-- Subtitle -->
+            <div class="text-[28px] font-semibold text-blue-100 mb-8 tracking-wide">
+                Master Your AI Prompts, Amplify Your Productivity
+            </div>
+            
+            <!-- Tagline -->
+            <div class="text-xl text-white/80 font-light max-w-2xl leading-relaxed">
+                The Ultimate Browser Extension for Prompt Management
+            </div>
+            
+            <!-- Decorative Line -->
+            <div class="w-24 h-1 bg-gradient-to-r from-transparent via-purple-400 to-transparent mt-10 rounded-full"></div>
+        </div>
+        
+        <!-- Bottom Accent -->
+        <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-blue-600 via-purple-500 to-pink-500"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Key Features Deep Dive</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<style type="text/tailwindcss">
+@layer utilities {
+.ppt-slide {
+@apply relative w-[1280px] min-h-[720px] mx-auto box-border
+}
+}
+</style>
+<style>body {
+    font-family: "IBM Plex Sans", sans-serif;
+    background: #f8fafc
+    }
+.tech-title {
+    font-family: "Inter", sans-serif
+    }</style>
+<style>.material-icons {
+    width: 1em
+    }</style><style>.material-icons {
+    direction: rtl
+    }</style></head>
+<body>
+<div class="ppt-slide bg-white h-[720px] flex flex-col">
+<div class="px-16 py-8 flex-grow flex flex-col justify-center">
+<h2 class="tech-title font-bold text-slate-800 mb-6" style="font-size: 40px;
+letter-spacing: -1px">
+Key Features <span class="text-cyan-500">Deep Dive</span>
+</h2>
+
+<div class="grid grid-cols-3 gap-6 h-[480px]">
+<div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 flex flex-col border border-blue-100">
+<div class="flex items-center gap-3 mb-5">
+<div class="w-14 h-14 bg-blue-900 rounded-xl flex items-center justify-center flex-shrink-0">
+<i class="material-icons text-white" style="font-size: 32px">router</i>
+</div>
+<h3 class="text-slate-800 font-bold text-2xl">SNMP Management</h3>
+</div>
+
+<div class="space-y-3 flex-grow">
+<div class="flex items-start gap-3">
+<div class="w-2 h-2 bg-blue-900 rounded-full mt-2 flex-shrink-0"></div>
+<p class="text-slate-700 font-medium text-base">Device registration & management</p>
+</div>
+
+<div class="flex items-start gap-3">
+<div class="w-2 h-2 bg-blue-900 rounded-full mt-2 flex-shrink-0"></div>
+<p class="text-slate-700 font-medium text-base">MIB support with custom parsers</p>
+</div>
+
+<div class="flex items-start gap-3">
+<div class="w-2 h-2 bg-blue-900 rounded-full mt-2 flex-shrink-0"></div>
+<p class="text-slate-700 font-medium text-base">Configurable polling engine on port 162</p>
+</div>
+
+<div class="flex items-start gap-3">
+<div class="w-2 h-2 bg-blue-900 rounded-full mt-2 flex-shrink-0"></div>
+<p class="text-slate-700 font-medium text-base">Real-time trap processing</p>
+</div>
+</div>
+
+<div class="mt-5 pt-5 border-t border-blue-200">
+<div class="flex items-center gap-2 p-3 bg-blue-100 rounded-lg">
+<i class="material-icons text-blue-900" style="font-size: 20px">speed</i>
+<span class="text-slate-800 font-semibold text-sm">30-second polling intervals</span>
+</div>
+</div>
+</div>
+
+<div class="bg-gradient-to-br from-cyan-50 to-teal-50 rounded-xl p-6 flex flex-col border border-cyan-100">
+<div class="flex items-center gap-3 mb-5">
+<div class="w-14 h-14 bg-blue-900 rounded-xl flex items-center justify-center flex-shrink-0">
+<i class="material-icons text-white" style="font-size: 32px">insights</i>
+</div>
+<h3 class="text-slate-800 font-bold text-2xl">Prometheus Integration</h3>
+</div>
+
+<div class="space-y-3 flex-grow">
+<div class="flex items-start gap-3">
+<div class="w-2 h-2 bg-blue-900 rounded-full mt-2 flex-shrink-0"></div>
+<p class="text-slate-700 font-medium text-base">Standard metrics: CPU, Memory, Disk, Network</p>
+</div>
+
+<div class="flex items-start gap-3">
+<div class="w-2 h-2 bg-blue-900 rounded-full mt-2 flex-shrink-0"></div>
+<p class="text-slate-700 font-medium text-base">Custom telecom metrics for EMM/BSCS</p>
+</div>
+
+<div class="flex items-start gap-3">
+<div class="w-2 h-2 bg-blue-900 rounded-full mt-2 flex-shrink-0"></div>
+<p class="text-slate-700 font-medium text-base">PromQL compatible querying</p>
+</div>
+
+<div class="flex items-start gap-3">
+<div class="w-2 h-2 bg-blue-900 rounded-full mt-2 flex-shrink-0"></div>
+<p class="text-slate-700 font-medium text-base">Rich charts and dashboards</p>
+</div>
+</div>
+
+<div class="mt-5 pt-5 border-t border-cyan-200">
+<div class="flex items-center gap-2 p-3 bg-cyan-100 rounded-lg">
+<i class="material-icons text-cyan-700" style="font-size: 20px">timeline</i>
+<span class="text-slate-800 font-semibold text-sm">Auto-refresh every 30 seconds</span>
+</div>
+</div>
+</div>
+
+<div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-6 flex flex-col border border-indigo-100">
+<div class="flex items-center gap-3 mb-5">
+<div class="w-14 h-14 bg-blue-900 rounded-xl flex items-center justify-center flex-shrink-0">
+<i class="material-icons text-white" style="font-size: 32px">notifications_active</i>
+</div>
+<h3 class="text-slate-800 font-bold text-2xl">Alert System</h3>
+</div>
+
+<div class="space-y-3 flex-grow">
+<div class="flex items-start gap-3">
+<div class="w-2 h-2 bg-blue-900 rounded-full mt-2 flex-shrink-0"></div>
+<p class="text-slate-700 font-medium text-base">Multi-source detection</p>
+</div>
+
+<div class="flex items-start gap-3">
+<div class="w-2 h-2 bg-blue-900 rounded-full mt-2 flex-shrink-0"></div>
+<p class="text-slate-700 font-medium text-base">Cross-system correlation engine</p>
+</div>
+
+<div class="flex items-start gap-3">
+<div class="w-2 h-2 bg-blue-900 rounded-full mt-2 flex-shrink-0"></div>
+<p class="text-slate-700 font-medium text-base">Severity classification & assignment</p>
+</div>
+
+<div class="flex items-start gap-3">
+<div class="w-2 h-2 bg-blue-900 rounded-full mt-2 flex-shrink-0"></div>
+<p class="text-slate-700 font-medium text-base">Real-time notifications & lifecycle tracking</p>
+</div>
+</div>
+
+<div class="mt-5 pt-5 border-t border-indigo-200">
+<div class="flex items-center gap-2 p-3 bg-indigo-100 rounded-lg">
+<i class="material-icons text-indigo-700" style="font-size: 20px">multiline_chart</i>
+<span class="text-slate-800 font-semibold text-sm">Full alert lifecycle management</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

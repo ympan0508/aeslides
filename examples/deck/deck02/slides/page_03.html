@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>System Architecture - High-Level Overview</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<style type="text/tailwindcss">
+@layer utilities {
+.ppt-slide {
+@apply relative w-[1280px] min-h-[720px] mx-auto box-border
+}
+}
+</style>
+<style>body {
+    font-family: "IBM Plex Sans", sans-serif;
+    background: #f8fafc
+    }
+.tech-title {
+    font-family: "Inter", sans-serif
+    }</style>
+<style>.material-icons {
+    width: 1em
+    }</style><style>.material-icons {
+    direction: rtl
+    }</style></head>
+<body>
+<div class="ppt-slide bg-white h-[720px] flex flex-col">
+<div class="px-16 py-8 flex-grow flex flex-col justify-center">
+<h2 class="tech-title font-bold text-slate-800 mb-6" style="font-size: 40px;
+letter-spacing: -1px">
+System Architecture <span class="text-cyan-500">Overview</span>
+</h2>
+<div class="grid grid-cols-4 gap-6 mb-6">
+<div class="bg-gradient-to-br from-blue-900 to-blue-800 rounded-xl p-5 shadow-lg">
+<div class="flex items-center gap-2 mb-3">
+<i class="material-icons text-white" style="font-size: 28px">web</i>
+<h3 class="text-white font-semibold text-lg">Frontend Layer</h3>
+</div>
+<p class="text-blue-100 text-sm leading-relaxed">React-based interface with interactive dashboards and real-time visualizations.</p>
+</div>
+
+<div class="bg-gradient-to-br from-cyan-700 to-cyan-800 rounded-xl p-5 shadow-lg">
+<div class="flex items-center gap-2 mb-3">
+<i class="material-icons text-white" style="font-size: 28px">developer_board</i>
+<h3 class="text-white font-semibold text-lg">Backend Layer</h3>
+</div>
+<p class="text-cyan-100 text-sm leading-relaxed">Node.js services handling logic, metrics collection, and device management.</p>
+</div>
+
+<div class="bg-gradient-to-br from-indigo-700 to-indigo-800 rounded-xl p-5 shadow-lg">
+<div class="flex items-center gap-2 mb-3">
+<i class="material-icons text-white" style="font-size: 28px">cloud_queue</i>
+<h3 class="text-white font-semibold text-lg">External Systems</h3>
+</div>
+<p class="text-indigo-100 text-sm leading-relaxed">Integration with Prometheus Server, SNMP devices, and telecom infrastructure.</p>
+</div>
+
+<div class="bg-gradient-to-br from-slate-700 to-slate-800 rounded-xl p-5 shadow-lg">
+<div class="flex items-center gap-2 mb-3">
+<i class="material-icons text-white" style="font-size: 28px">storage</i>
+<h3 class="text-white font-semibold text-lg">Data Layer</h3>
+</div>
+<p class="text-slate-100 text-sm leading-relaxed">MongoDB for data persistence, Prometheus for metrics, SNMP Agent for device monitoring.</p>
+</div>
+</div>
+</div>
+
+<div class="px-16 pb-8">
+<div class="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-2xl p-4 shadow-inner border border-blue-100">
+<img alt="Network Topology" class="w-full h-[200px] object-cover rounded-lg" src="https://sfile.chatglm.cn/images-ppt/5af34eb4ba27.png"/>
+<div class="flex items-center justify-between mt-3">
+<div class="flex items-center gap-2">
+<i class="material-icons text-cyan-600" style="font-size: 20px">hub</i>
+<span class="text-slate-700 text-sm font-semibold">Network Topology Visualization</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="flex items-center gap-1 text-slate-600 text-xs">
+<i class="material-icons text-blue-900" style="font-size: 16px">circle</i>
+EMM
+</span>
+<span class="flex items-center gap-1 text-slate-600 text-xs">
+<i class="material-icons text-blue-900" style="font-size: 16px">circle</i>
+BSCS
+</span>
+<span class="flex items-center gap-1 text-slate-600 text-xs">
+<i class="material-icons text-blue-900" style="font-size: 16px">circle</i>
+Network Equipment
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

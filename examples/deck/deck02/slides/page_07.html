@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Deployment Architecture</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<style type="text/tailwindcss">
+@layer utilities {
+.ppt-slide {
+@apply relative w-[1280px] min-h-[720px] mx-auto box-border
+}
+}
+</style>
+<style>body {
+    font-family: "IBM Plex Sans", sans-serif;
+    background: #f8fafc
+    }
+.tech-title {
+    font-family: "Inter", sans-serif
+    }</style>
+<style>.material-icons {
+    width: 1em
+    }</style><style>.material-icons {
+    direction: rtl
+    }</style></head>
+<body>
+<div class="ppt-slide bg-white h-[720px] flex flex-col">
+<div class="px-16 py-8 flex-grow flex flex-col justify-center">
+<h2 class="tech-title font-bold text-slate-800 mb-6" style="font-size: 40px;
+letter-spacing: -1px">
+Deployment <span class="text-cyan-500">Architecture</span>
+</h2>
+
+<div class="grid grid-cols-2 gap-6">
+<div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-6 border border-blue-100">
+<h3 class="text-slate-800 font-bold text-xl mb-5 flex items-center gap-2">
+<i class="material-icons text-blue-900" style="font-size: 28px">layers</i>
+Docker Compose Network
+</h3>
+<div class="space-y-3">
+<div class="flex items-center gap-3 bg-white rounded-lg p-3 border-l-4 border-cyan-500">
+<div class="w-10 h-10 bg-blue-900 rounded-lg flex items-center justify-center flex-shrink-0">
+<i class="material-icons text-white" style="font-size: 24px">web</i>
+</div>
+<div class="flex-1">
+<p class="text-slate-800 font-semibold text-base">orbit-frontend</p>
+<p class="text-slate-500 text-sm">Port 3000 → Nginx</p>
+</div>
+</div>
+
+<div class="flex items-center gap-3 bg-white rounded-lg p-3 border-l-4 border-cyan-500">
+<div class="w-10 h-10 bg-blue-900 rounded-lg flex items-center justify-center flex-shrink-0">
+<i class="material-icons text-white" style="font-size: 24px">developer_board</i>
+</div>
+<div class="flex-1">
+<p class="text-slate-800 font-semibold text-base">orbit-backend</p>
+<p class="text-slate-500 text-sm">Port 3001 → Frontend</p>
+</div>
+</div>
+
+<div class="flex items-center gap-3 bg-white rounded-lg p-3 border-l-4 border-cyan-500">
+<div class="w-10 h-10 bg-blue-900 rounded-lg flex items-center justify-center flex-shrink-0">
+<i class="material-icons text-white" style="font-size: 24px">dns</i>
+</div>
+<div class="flex-1">
+<p class="text-slate-800 font-semibold text-base">MongoDB Database</p>
+<p class="text-slate-500 text-sm">Storages</p>
+</div>
+</div>
+
+<div class="flex items-center gap-3 bg-white rounded-lg p-3 border-l-4 border-cyan-500">
+<div class="w-10 h-10 bg-blue-900 rounded-lg flex items-center justify-center flex-shrink-0">
+<i class="material-icons text-white" style="font-size: 24px">vpn_lock</i>
+</div>
+<div class="flex-1">
+<p class="text-slate-800 font-semibold text-base">Nginx Reverse Proxy</p>
+<p class="text-slate-500 text-sm">Load Balancing</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="bg-gradient-to-br from-cyan-50 to-teal-50 rounded-2xl p-6 border border-cyan-100">
+<h3 class="text-slate-800 font-bold text-xl mb-5 flex items-center gap-2">
+<i class="material-icons text-cyan-700" style="font-size: 28px">cloud</i>
+Production Environment
+</h3>
+<img alt="Cloud Architecture" class="w-full h-[240px] object-cover rounded-xl mb-4" src="https://sfile.chatglm.cn/images-ppt/12d48cb18a32.png"/>
+<div class="grid grid-cols-3 gap-3 mt-4">
+<div class="text-center p-2 bg-white rounded-lg">
+<i class="material-icons text-blue-900 mb-1" style="font-size: 20px">web</i>
+<p class="text-slate-700 text-xs font-semibold">Frontend</p>
+</div>
+<div class="text-center p-2 bg-white rounded-lg">
+<i class="material-icons text-blue-900 mb-1" style="font-size: 20px">api</i>
+<p class="text-slate-700 text-xs font-semibold">Backend API</p>
+</div>
+<div class="text-center p-2 bg-white rounded-lg">
+<i class="material-icons text-blue-900 mb-1" style="font-size: 20px">storage</i>
+<p class="text-slate-700 text-xs font-semibold">Data Layer</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

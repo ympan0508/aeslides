@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Simple Code Examples</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .ppt-slide {
+                @apply relative w-[1280px] min-h-[720px] mx-auto box-border overflow-hidden
+            }
+        }
+    </style>
+    <style>body {
+    font-family: "Inter", sans-serif;
+    background: #f8fafc
+    }
+.code-block {
+    background: #1e293b;
+    border-radius: 8px;
+    overflow: hidden
+    }
+.code-header {
+    background: #0f172a;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px
+    }
+.code-header .lang-badge {
+    background: #334155;
+    color: #94a3b8;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-family: "Fira Code", monospace;
+    font-size: 14px;
+    font-weight: 500
+    }
+.code-content {
+    padding: 16px;
+    font-family: "Fira Code", monospace;
+    font-size: 16px;
+    line-height: 1.6
+    }
+.code-line {
+    display: block;
+    padding: 2px 0
+    }
+.keyword {
+    color: #c678dd
+    }
+.function {
+    color: #61afef
+    }
+.string {
+    color: #98c379
+    }
+.comment {
+    color: #7f848e;
+    font-style: italic
+    }
+.number {
+    color: #d19a66
+    }
+.code-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(37, 99, 235, 0.1);
+    transition: all 0.3s ease
+    }
+.code-card:hover {
+    transform: translatey(-5px);
+    box-shadow: 0 8px 30px rgba(37, 99, 235, 0.15)
+    }</style>
+<style>.material-icons {
+    width: 1em
+    }</style><style>.material-icons {
+    direction: rtl
+    }</style></head>
+<body>
+    <div class="ppt-slide h-[720px] bg-gradient-to-br from-slate-50 to-blue-50">
+        <!-- Header -->
+        <div class="h-[80px] flex items-center px-16 border-b border-blue-100">
+            <h1 class="text-[40px] font-bold text-blue-900">Simple Code Examples</h1>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="h-[640px] flex flex-col justify-center px-16 py-8">
+            <div class="grid grid-cols-2 gap-8">
+                <!-- REST API Example -->
+                <div class="code-card">
+                    <div class="code-header">
+                        <div class="flex items-center gap-2">
+                            <i class="material-icons text-blue-400 text-[20px]">api</i>
+                            <span class="text-white text-[18px] font-semibold">REST API Example</span>
+                        </div>
+                        <span class="lang-badge ml-auto">Python</span>
+                    </div>
+                    <div class="code-content">
+                        <div class="code-line"><span class="keyword">import</span> requests</div>
+                        <div class="code-line">&nbsp;</div>
+                        <div class="code-line"><span class="comment"># Get latest BTCUSD price</span></div>
+                        <div class="code-line"><span class="function">response</span> = requests.<span class="function">get</span>(</div>
+                        <div class="code-line">&nbsp;&nbsp;<span class="string">'https://api.yourexchange.com/v1/ticker'</span>,</div>
+                        <div class="code-line">&nbsp;&nbsp;params={<span class="string">'symbol'</span>: <span class="string">'BTCUSD'</span>})</div>
+                        <div class="code-line">&nbsp;</div>
+                        <div class="code-line"><span class="function">print</span>(response.<span class="function">json</span>())</div>
+                    </div>
+                </div>
+                
+                <!-- WebSocket Example -->
+                <div class="code-card">
+                    <div class="code-header">
+                        <div class="flex items-center gap-2">
+                            <i class="material-icons text-purple-400 text-[20px]">stream</i>
+                            <span class="text-white text-[18px] font-semibold">WebSocket Example</span>
+                        </div>
+                        <span class="lang-badge ml-auto">JavaScript</span>
+                    </div>
+                    <div class="code-content">
+                        <div class="code-line"><span class="keyword">const</span> ws = <span class="keyword">new</span> <span class="function">WebSocket</span>(<span class="string">'wss://api.yourexchange.com/v1/stream'</span>);</div>
+                        <div class="code-line">&nbsp;</div>
+                        <div class="code-line"><span class="comment">// Handle incoming data</span></div>
+                        <div class="code-line">ws.<span class="function">on</span>(<span class="string">'message'</span>, (<span class="function">data</span>) => {</div>
+                        <div class="code-line">&nbsp;&nbsp;<span class="function">console</span>.<span class="function">log</span>(<span class="function">JSON</span>.<span class="function">parse</span>(<span class="function">data</span>));</div>
+                        <div class="code-line">});</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quick Reference -->
+            <div class="mt-8 flex items-center justify-center gap-4">
+                <div class="flex items-center gap-2 bg-white px-4 py-2 rounded-lg shadow-sm">
+                    <i class="material-icons text-blue-600 text-[20px]">check_circle</i>
+                    <span class="text-slate-600 text-[18px]">Full documentation available</span>
+                </div>
+                <div class="flex items-center gap-2 bg-white px-4 py-2 rounded-lg shadow-sm">
+                    <i class="material-icons text-purple-600 text-[20px]">check_circle</i>
+                    <span class="text-slate-600 text-[18px]">SDKs for Python, JavaScript, Java</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

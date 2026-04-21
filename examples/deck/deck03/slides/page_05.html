@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Seamless Integration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .ppt-slide {
+                @apply relative w-[1280px] min-h-[720px] mx-auto box-border overflow-hidden
+            }
+        }
+    </style>
+    <style>body {
+    font-family: "Inter", sans-serif;
+    background: #f0f0f0
+    }
+.primary-gradient {
+    background: linear-gradient(135deg, #1e3a8a 0%, #7c3aed 100%)
+    }</style>
+<style>.material-icons {
+    width: 1em
+    }</style><style>.material-icons {
+    direction: rtl
+    }</style></head>
+<body>
+    <div class="ppt-slide h-[720px] bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900 flex">
+        <!-- Left Content Section -->
+        <div class="w-1/2 flex flex-col justify-center pl-[70px] pr-8">
+            <div class="mb-6">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-12 h-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"></div>
+                    <span class="text-purple-400 text-sm font-semibold uppercase tracking-wider">How It Works</span>
+                </div>
+                <h2 class="text-[40px] font-bold text-white leading-tight">Seamless <span class="text-purple-400">Integration</span></h2>
+            </div>
+            
+            <div class="space-y-4 mt-8">
+                <!-- Integration Items -->
+                <div class="flex items-start gap-4 p-4 bg-white/5 rounded-xl border border-white/10">
+                    <i class="material-icons text-purple-400 text-3xl">integration_instructions</i>
+                    <div>
+                        <h3 class="text-white text-lg font-semibold">Fully Integrated</h3>
+                        <p class="text-gray-400 text-base">Works with ChatGPT, Google Bard, and more</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start gap-4 p-4 bg-white/5 rounded-xl border border-white/10">
+                    <i class="material-icons text-blue-400 text-3xl">folder_zip</i>
+                    <div>
+                        <h3 class="text-white text-lg font-semibold">Organized Storage</h3>
+                        <p class="text-gray-400 text-base">Store prompts in custom folders</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start gap-4 p-4 bg-white/5 rounded-xl border border-white/10">
+                    <i class="material-icons text-pink-400 text-3xl">label</i>
+                    <div>
+                        <h3 class="text-white text-lg font-semibold">Smart Categorization</h3>
+                        <p class="text-gray-400 text-base">Name and tag prompts as you like</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start gap-4 p-4 bg-white/5 rounded-xl border border-white/10">
+                    <i class="material-icons text-indigo-400 text-3xl">link</i>
+                    <div>
+                        <h3 class="text-white text-lg font-semibold">Content Linking</h3>
+                        <p class="text-gray-400 text-base">Connect prompts to videos and resources</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start gap-4 p-4 bg-white/5 rounded-xl border border-white/10">
+                    <i class="material-icons text-teal-400 text-3xl">share</i>
+                    <div>
+                        <h3 class="text-white text-lg font-semibold">Instant Sharing</h3>
+                        <p class="text-gray-400 text-base">Collaborate with colleagues seamlessly</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Right Visual Section -->
+        <div class="w-1/2 flex items-center justify-center pr-[70px] pl-8">
+            <div class="relative w-full h-[580px] rounded-2xl overflow-hidden shadow-2xl">
+                <img src="https://sfile.chatglm.cn/images-ppt/0dbe9345c289.jpg" alt="Browser Extension Integration" class="w-full h-full object-cover"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                <div class="absolute bottom-6 left-6 right-6">
+                    <p class="text-white text-lg font-semibold">Seamless Browser Extension Integration</p>
+                    <p class="text-gray-200 text-base mt-1">Works natively with your favorite AI platforms</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Support & Resources</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .ppt-slide {
+                @apply relative w-[1280px] min-h-[720px] mx-auto box-border overflow-hidden
+            }
+        }
+    </style>
+    <style>body {
+    font-family: "Inter", sans-serif;
+    background: #f8fafc
+    }
+.resource-card {
+    background: white;
+    transition: all 0.3s ease;
+    border: 2px solid transparent
+    }
+.resource-card:hover {
+    transform: translatey(-8px);
+    border-color: #2563EB;
+    box-shadow: 0 20px 40px rgba(37, 99, 235, 0.2)
+    }
+.cta-button {
+    background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%);
+    transition: all 0.3s ease
+    }
+.cta-button:hover {
+    transform: translatey(-2px);
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.4)
+    }</style>
+<style>.material-icons {
+    width: 1em
+    }</style><style>.material-icons {
+    direction: rtl
+    }</style></head>
+<body>
+    <div class="ppt-slide h-[720px] bg-gradient-to-br from-slate-50 to-blue-50">
+        <!-- Header -->
+        <div class="h-[80px] flex items-center px-16 border-b border-blue-100">
+            <h1 class="text-[40px] font-bold text-blue-900">Support & Resources</h1>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="h-[640px] flex flex-col justify-center px-16 py-8">
+            <!-- Resources Grid -->
+            <div class="grid grid-cols-2 gap-6 mb-8">
+                <!-- Documentation -->
+                <div class="resource-card rounded-xl p-6 flex items-center gap-5">
+                    <div class="flex-shrink-0 w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center">
+                        <i class="material-icons text-blue-600 text-[36px]">description</i>
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-[24px] font-bold text-slate-800 mb-1">Documentation</h3>
+                        <p class="text-[18px] text-slate-500">Comprehensive API reference and guides</p>
+                    </div>
+                </div>
+                
+                <!-- SDKs & Libraries -->
+                <div class="resource-card rounded-xl p-6 flex items-center gap-5">
+                    <div class="flex-shrink-0 w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center">
+                        <i class="material-icons text-purple-600 text-[36px]">code</i>
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-[24px] font-bold text-slate-800 mb-1">SDKs & Libraries</h3>
+                        <p class="text-[18px] text-slate-500">Pre-built libraries for Python, JavaScript, Java</p>
+                    </div>
+                </div>
+                
+                <!-- Community Forum -->
+                <div class="resource-card rounded-xl p-6 flex items-center gap-5">
+                    <div class="flex-shrink-0 w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center">
+                        <i class="material-icons text-green-600 text-[36px]">groups</i>
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-[24px] font-bold text-slate-800 mb-1">Community Forum</h3>
+                        <p class="text-[18px] text-slate-500">Connect with other developers</p>
+                    </div>
+                </div>
+                
+                <!-- 24/7 Support -->
+                <div class="resource-card rounded-xl p-6 flex items-center gap-5">
+                    <div class="flex-shrink-0 w-16 h-16 bg-orange-100 rounded-xl flex items-center justify-center">
+                        <i class="material-icons text-orange-600 text-[36px]">support_agent</i>
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-[24px] font-bold text-slate-800 mb-1">24/7 Support</h3>
+                        <p class="text-[18px] text-slate-500">Get help when you need it</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CTA Section -->
+            <div class="flex items-center justify-between gap-6">
+                <div class="flex items-center gap-3 flex-grow">
+                    <i class="material-icons text-blue-600 text-[32px]">email</i>
+                    <div>
+                        <p class="text-[20px] font-semibold text-slate-700">contact@yourexchange.com</p>
+                        <p class="text-[16px] text-slate-500">Need immediate assistance? We're here to help</p>
+                    </div>
+                </div>
+                
+                <div class="flex-shrink-0">
+                    <button class="cta-button text-white text-[24px] font-bold px-8 py-4 rounded-xl flex items-center gap-3">
+                        <i class="material-icons text-[28px]">rocket_launch</i>
+                        Start Building Today
+                        <i class="material-icons text-[28px]">arrow_forward</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Data Flow Architecture</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<style type="text/tailwindcss">
+@layer utilities {
+.ppt-slide {
+@apply relative w-[1280px] min-h-[720px] mx-auto box-border
+}
+}
+</style>
+<style>body {
+    font-family: "IBM Plex Sans", sans-serif;
+    background: #f8fafc
+    }
+.tech-title {
+    font-family: "Inter", sans-serif
+    }</style>
+<style>.material-icons {
+    width: 1em
+    }</style><style>.material-icons {
+    direction: rtl
+    }</style></head>
+<body>
+<div class="ppt-slide bg-white h-[720px] flex flex-col">
+<div class="px-16 py-10 flex-grow flex flex-col justify-center">
+<h2 class="tech-title font-bold text-slate-800 mb-6" style="font-size: 40px;
+letter-spacing: -1px">
+Data Flow <span class="text-cyan-500">Architecture</span>
+</h2>
+<div class="grid grid-cols-3 gap-6">
+<div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 shadow-lg border border-blue-100">
+<div class="flex flex-col items-center mb-6">
+<div class="w-16 h-16 bg-blue-900 rounded-2xl flex items-center justify-center mb-3">
+<i class="material-icons text-white" style="font-size: 32px">speed</i>
+</div>
+<h3 class="text-slate-800 font-bold text-xl">Metrics Collection</h3>
+</div>
+<div class="space-y-4">
+<div class="flex items-center gap-2">
+<i class="material-icons text-cyan-600" style="font-size: 20px">arrow_downward</i>
+<div class="flex-1 bg-blue-100 rounded-lg p-3">
+<span class="text-slate-700 font-medium text-sm">SNMP Devices</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<i class="material-icons text-cyan-600" style="font-size: 20px">arrow_downward</i>
+<div class="flex-1 bg-cyan-100 rounded-lg p-3">
+<span class="text-slate-700 font-medium text-sm">SNMP Manager</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<i class="material-icons text-cyan-600" style="font-size: 20px">arrow_downward</i>
+<div class="flex-1 bg-indigo-100 rounded-lg p-3">
+<span class="text-slate-700 font-medium text-sm">MongoDB</span>
+</div>
+</div>
+</div>
+<div class="mt-5 flex items-center gap-2 text-cyan-700 text-sm font-medium">
+<i class="material-icons" style="font-size: 18px">touch_app</i>
+<span>Real-time WebSocket Updates</span>
+</div>
+<div class="mt-3 flex items-center gap-2 text-slate-600 text-xs font-medium">
+<i class="material-icons text-slate-500" style="font-size: 16px">timer</i>
+<span>30-second polling interval</span>
+</div>
+</div>
+
+<div class="bg-gradient-to-br from-cyan-50 to-teal-50 rounded-xl p-6 shadow-lg border border-cyan-100">
+<div class="flex flex-col items-center mb-6">
+<div class="w-16 h-16 bg-blue-900 rounded-2xl flex items-center justify-center mb-3">
+<i class="material-icons text-white" style="font-size: 32px">insights</i>
+</div>
+<h3 class="text-slate-800 font-bold text-xl">Prometheus Integration</h3>
+</div>
+<div class="space-y-4">
+<div class="flex items-center gap-2">
+<i class="material-icons text-cyan-600" style="font-size: 20px">arrow_downward</i>
+<div class="flex-1 bg-cyan-100 rounded-lg p-3">
+<span class="text-slate-700 font-medium text-sm">Prometheus Server</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<i class="material-icons text-cyan-600" style="font-size: 20px">arrow_downward</i>
+<div class="flex-1 bg-teal-100 rounded-lg p-3">
+<span class="text-slate-700 font-medium text-sm">Backend API</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<i class="material-icons text-cyan-600" style="font-size: 20px">arrow_downward</i>
+<div class="flex-1 bg-blue-100 rounded-lg p-3">
+<span class="text-slate-700 font-medium text-sm">Frontend Charts</span>
+</div>
+</div>
+</div>
+<div class="mt-5 flex items-center gap-2 text-cyan-700 text-sm font-medium">
+<i class="material-icons" style="font-size: 18px">timeline</i>
+<span>Auto-refresh every 30s</span>
+</div>
+<div class="mt-3 flex items-center gap-2 text-slate-600 text-xs font-medium">
+<i class="material-icons text-slate-500" style="font-size: 16px">query_stats</i>
+<span>Rich data visualization</span>
+</div>
+</div>
+
+<div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-6 shadow-lg border border-indigo-100">
+<div class="flex flex-col items-center mb-6">
+<div class="w-16 h-16 bg-blue-900 rounded-2xl flex items-center justify-center mb-3">
+<i class="material-icons text-white" style="font-size: 32px">warning</i>
+</div>
+<h3 class="text-slate-800 font-bold text-xl">Alert Management</h3>
+</div>
+<div class="space-y-3">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 bg-cyan-100 rounded-lg flex items-center justify-center flex-shrink-0">
+<i class="material-icons text-cyan-600" style="font-size: 18px">filter_1</i>
+</div>
+<div class="flex-1 bg-blue-100 rounded-lg p-2">
+<span class="text-slate-700 font-medium text-sm">Multi-source Ingestion</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 bg-cyan-100 rounded-lg flex items-center justify-center flex-shrink-0">
+<i class="material-icons text-cyan-600" style="font-size: 18px">filter_2</i>
+</div>
+<div class="flex-1 bg-cyan-100 rounded-lg p-2">
+<span class="text-slate-700 font-medium text-sm">Alert Correlation Engine</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 bg-cyan-100 rounded-lg flex items-center justify-center flex-shrink-0">
+<i class="material-icons text-cyan-600" style="font-size: 18px">filter_3</i>
+</div>
+<div class="flex-1 bg-indigo-100 rounded-lg p-2">
+<span class="text-slate-700 font-medium text-sm">Severity Assignment</span>
+</div>
+</div>
+</div>
+<div class="mt-5 flex items-center gap-2 text-cyan-700 text-sm font-medium">
+<i class="material-icons" style="font-size: 18px">notifications_active</i>
+<span>Real-time WebSocket Notifications</span>
+</div>
+<div class="mt-3 flex items-center gap-2 text-slate-600 text-xs font-medium">
+<i class="material-icons text-slate-500" style="font-size: 16px">autorenew</i>
+<span>Full alert lifecycle tracking</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>技法鉴赏 · 构图与布局</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<style type="text/tailwindcss">
+@layer utilities {
+.ppt-slide {
+@apply relative w-[1280px] min-h-[720px] mx-auto box-border
+}
+}
+</style>
+<style>body {
+    font-family: "Noto Serif SC", serif;
+    background: #f5f5f0
+    }
+.title-font {
+    font-family: "Noto Serif SC", serif
+    }</style>
+<style>.material-icons {
+    width: 1em
+    }</style><style>.material-icons {
+    direction: rtl
+    }</style></head>
+<body>
+<div class="ppt-slide h-[720px] flex" style="background: #f4f1ea">
+<!-- 左侧图片区域 -->
+<div class="w-[48%] relative overflow-hidden flex flex-col">
+<div class="relative flex-grow">
+<img alt="富春山居图局部细节" class="w-full h-full object-cover" src="https://sfile.chatglm.cn/images-ppt/300ecab05098.jpg"/>
+<div class="absolute bottom-0 left-0 right-0 h-24" style="background: linear-gradient(to top, rgba(212, 175, 55, 0.4), transparent)"></div>
+</div>
+<!-- 四季流转示意 -->
+<div class="px-8 py-6 bg-opacity-80" style="background: rgba(0, 0, 0, 0.15)">
+<div class="flex items-center justify-around">
+<div class="text-center">
+<div class="text-4xl mb-1">🌸</div>
+<div class="text-sm font-semibold" style="color: #f9f7f2">春夏</div>
+</div>
+<div class="flex flex-col items-center">
+<div class="text-2xl mb-1">🍂</div>
+<div class="text-sm font-semibold" style="color: #f9f7f2">秋冬</div>
+</div>
+<div class="w-px h-8" style="background: #d4af37"></div>
+<div class="text-center">
+<div class="text-xl mb-1" style="color: #d4af37">四季流转</div>
+<div class="text-xs" style="color: #c9c4b8">季节更替</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- 右侧文字内容区域 -->
+<div class="w-[52%] flex flex-col justify-center px-14 py-10">
+<div class="mb-6">
+<h2 class="title-font text-4xl font-bold" style="color: #2c3e50">构图与布局</h2>
+<div class="w-20 h-0.5 mt-3" style="background: #d4af37"></div>
+</div>
+
+<div class="space-y-6">
+<!-- 四段式布局 -->
+<div class="flex items-start">
+<div class="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center mr-4" style="background: rgba(212, 175, 55, 0.15)">
+<span class="text-xl font-bold" style="color: #d4af37">01</span>
+</div>
+<div class="flex-grow">
+<h3 class="text-xl font-semibold mb-1" style="color: #2c3e50">四段式布局</h3>
+<p class="text-base leading-relaxed" style="color: #5a6c7a">月夜江边 · 富春江浸染 · 苍鹰翱翔 · 渔家乐事</p>
+</div>
+</div>
+
+<!-- 视点运用 -->
+<div class="flex items-start">
+<div class="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center mr-4" style="background: rgba(212, 175, 55, 0.15)">
+<span class="text-xl font-bold" style="color: #d4af37">02</span>
+</div>
+<div class="flex-grow">
+<h3 class="text-xl font-semibold mb-1" style="color: #2c3e50">视点运用</h3>
+<p class="text-base leading-relaxed" style="color: #5a6c7a">浏览、移动、重叠的视点，或广角深远，或推近特写</p>
+</div>
+</div>
+
+<!-- 空间处理 -->
+<div class="flex items-start">
+<div class="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center mr-4" style="background: rgba(212, 175, 55, 0.15)">
+<span class="text-xl font-bold" style="color: #d4af37">03</span>
+</div>
+<div class="flex-grow">
+<h3 class="text-xl font-semibold mb-1" style="color: #2c3e50">空间处理</h3>
+<p class="text-base leading-relaxed" style="color: #5a6c7a">主体、次体、背景的安排，呈现层次感和空间感</p>
+</div>
+</div>
+
+<!-- 意境营造 -->
+<div class="flex items-start">
+<div class="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center mr-4" style="background: rgba(212, 175, 55, 0.15)">
+<span class="text-xl font-bold" style="color: #d4af37">04</span>
+</div>
+<div class="flex-grow">
+<h3 class="text-xl font-semibold mb-1" style="color: #2c3e50">意境营造</h3>
+<p class="text-base leading-relaxed" style="color: #5a6c7a">如同春夏秋冬四季流转，体现"行到水穷处，坐看云起时"的哲学意境</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

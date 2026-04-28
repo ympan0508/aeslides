@@ -1,6 +1,6 @@
 # AeSlides: A Reinforcement Learning Framework for Aesthetic Slide Generation
 
-[![Hugging Face](https://img.shields.io/badge/🤗%20HuggingFace-Model-yellow)](https://huggingface.co/ympan/GLM-4.7-Flash-AeSlides) [![Hugging Face](https://img.shields.io/badge/🤗%20HuggingFace-Dataset-yellow)](https://huggingface.co/datasets/ympan/aeslides-reward-bench) [![arXiv](https://img.shields.io/badge/arXiv-ComingSoon-b31b1b.svg)](https://arxiv.org/abs/2604.00000)
+[![Hugging Face](https://img.shields.io/badge/🤗%20HuggingFace-Model-yellow)](https://huggingface.co/ympan/GLM-4.7-Flash-AeSlides) [![Hugging Face](https://img.shields.io/badge/🤗%20HuggingFace-Dataset-yellow)](https://huggingface.co/datasets/ympan/aeslides-reward-bench) [![arXiv](https://img.shields.io/badge/arXiv-2604.22840-b31b1b.svg)](https://arxiv.org/abs/2604.22840)
 
 ![case](./assets/readme/case.png)
 

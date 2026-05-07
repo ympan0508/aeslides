@@ -105,5 +105,10 @@ Besides, AeSlides is also integrated into GLM-5. To experience the full slide ge
 If you find this work useful, please cite:
 
 ```
-Will be updated upon arXiv release.
+@article{pan2026aeslides,
+  title={AeSlides: Incentivizing Aesthetic Layout in LLM-Based Slide Generation via Verifiable Rewards},
+  author={Pan, Yiming and Hu, Chengwei and Huang, Xuancheng and Huang, Can and Zhao, Mingming and Bi, Yuean and Zhang, Xiaohan and Zeng, Aohan and Hu, Linmei},
+  journal={arXiv preprint arXiv:2604.22840},
+  year={2026}
+}
 ```
